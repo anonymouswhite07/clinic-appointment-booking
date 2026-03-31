@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Poppins", "sans-serif";
+  --font-body: "Inter", "sans-serif";
+  
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+  
+  --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  --shadow-soft: 20px 20px 60px #d1d5db, -20px -20px 60px #ffffff;
+}
+
+@layer base {
+  body {
+    @apply font-body text-slate-800 bg-[#f8fbff];
+  }
+}
+
+@layer components {
+  /* Defining base glass effect */
+  .glass {
+    @apply bg-white/40 backdrop-blur-md border border-white/30 shadow-glass rounded-3xl transition-all duration-300;
+  }
+  
+  /* Manually expanding glass for glass-card to avoid recursive apply issues in v4 */
+  .glass-card {
+    @apply bg-white/40 backdrop-blur-md border border-white/30 shadow-glass rounded-3xl transition-all duration-300 
+           hover:bg-white/60 hover:shadow-xl hover:-translate-y-1;
+  }
+  
+  .glass-input {
+    @apply bg-white/50 backdrop-blur-md border border-white/50 rounded-2xl px-4 py-3 outline-none transition-all
+           focus:ring-2 focus:ring-primary-500/30 focus:border-primary-500/50;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-600 to-primary-500 text-white px-8 py-3.5 rounded-2xl font-semibold shadow-lg shadow-primary-500/20 
+           hover:shadow-primary-500/40 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center justify-center cursor-pointer;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-primary-600 px-8 py-3.5 rounded-2xl font-semibold border border-primary-100 shadow-sm 
+           hover:bg-primary-50 hover:border-primary-200 transition-all duration-300 cursor-pointer;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl font-heading text-slate-900 mb-4 font-bold;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-slate-500 max-w-2xl mx-auto;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 99px;
+  border: 2px solid #f1f5f9;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Fix for Framer Motion artifacts */
+.overflow-hidden-fix {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
