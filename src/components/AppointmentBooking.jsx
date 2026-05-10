@@ -44,12 +44,12 @@ const AppointmentBooking = () => {
   };
 
   const services = [
-    "General Checkup",
-    "Pediatrics",
-    "Neurology",
-    "Cardiology",
-    "Genetics",
-    "Diagnostics"
+    "Sports Injury",
+    "Pediatric Physio",
+    "Neuro Rehab",
+    "Manual Therapy",
+    "Post-Surgery",
+    "Posture Correction"
   ];
 
   return (

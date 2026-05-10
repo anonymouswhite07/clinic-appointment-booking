@@ -1,52 +1,52 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
-  Stethoscope, 
-  UserRound, 
+  Activity, 
   Baby, 
   Brain, 
-  Dna, 
-  Activity, 
+  Dumbbell, 
+  Hand, 
+  UserRound, 
   ArrowRightCircle,
-  Microscope,
-  Pill
+  Zap,
+  ShieldCheck
 } from 'lucide-react';
 
 const services = [
   {
-    title: "General Checkup",
-    icon: Stethoscope,
-    desc: "Complete physical assessment and health screening for adults.",
+    title: "Sports Injury",
+    icon: Activity,
+    desc: "Specialized rehabilitation for athletes to return to peak performance.",
     color: "bg-blue-100/50 text-blue-600"
   },
   {
-    title: "Pediatrics",
+    title: "Pediatric Physio",
     icon: Baby,
-    desc: "Specialized care for infants, children, and adolescents.",
+    desc: "Gentle and effective therapy for children and adolescents.",
     color: "bg-purple-100/50 text-purple-600"
   },
   {
-    title: "Neurology",
+    title: "Neuro Rehab",
     icon: Brain,
-    desc: "Expert treatment for brain and nervous system disorders.",
+    desc: "Focused therapy for neurological conditions and stroke recovery.",
     color: "bg-indigo-100/50 text-indigo-600"
   },
   {
-    title: "Cardiology",
-    icon: Activity,
-    desc: "Advanced heart care including diagnostics and treatments.",
+    title: "Manual Therapy",
+    icon: Hand,
+    desc: "Hands-on techniques to relieve pain and improve joint mobility.",
     color: "bg-rose-100/50 text-rose-600"
   },
   {
-    title: "Genetics",
-    icon: Dna,
-    desc: "Inherited condition testing and genetic counseling.",
+    title: "Post-Surgery",
+    icon: Zap,
+    desc: "Accelerated recovery programs following orthopedic surgeries.",
     color: "bg-emerald-100/50 text-emerald-600"
   },
   {
-    title: "Diagnostics",
-    icon: Microscope,
-    desc: "State-of-the-art laboratory and imaging services.",
+    title: "Posture Correction",
+    icon: UserRound,
+    desc: "Ergonomic assessments and exercises for long-term spinal health.",
     color: "bg-orange-100/50 text-orange-600"
   }
 ];
@@ -65,7 +65,7 @@ const Services = () => {
             viewport={{ once: true }}
             className="section-title"
           >
-            Specialized <span className="text-primary-600">Healthcare</span> Services
+            Specialized <span className="text-primary-600">Physiotherapy</span> Services
           </motion.h2>
           <motion.p 
              initial={{ opacity: 0, y: 30 }}
@@ -74,7 +74,7 @@ const Services = () => {
              transition={{ delay: 0.1 }}
              className="section-subtitle"
           >
-            We provide a wide range of medical specialties under one roof, ensuring you receive comprehensive care using latest medical technologies.
+            We provide a wide range of physiotherapy specialties under one roof, ensuring you receive comprehensive care using the latest rehabilitation techniques.
           </motion.p>
         </div>
 

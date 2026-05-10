@@ -5,30 +5,30 @@ import { Star, Award, GraduationCap, MapPin } from 'lucide-react';
 const doctors = [
   {
     name: "Dr. Sarah Mitchell",
-    role: "Senior Cardiologist",
+    role: "Sports Physiotherapist",
     exp: "12+ Years Exp.",
     rating: 4.9,
     reviews: 124,
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070&auto=format&fit=crop",
-    edu: "Johns Hopkins University"
+    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=1974&auto=format&fit=crop",
+    edu: "MSc Sports Medicine"
   },
   {
     name: "Dr. James Wilson",
-    role: "Pediatric Specialist",
+    role: "Manual Therapy Specialist",
     exp: "15+ Years Exp.",
     rating: 4.8,
     reviews: 89,
     image: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=2070&auto=format&fit=crop",
-    edu: "Harvard Medical School"
+    edu: "Doctor of Physiotherapy"
   },
   {
     name: "Dr. Emily Chen",
-    role: "Lead Neurologist",
+    role: "Neurological specialist",
     exp: "10+ Years Exp.",
     rating: 5.0,
     reviews: 156,
-    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=1974&auto=format&fit=crop",
-    edu: "Stanford Medical Center"
+    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070&auto=format&fit=crop",
+    edu: "BSc Physiotherapy"
   }
 ];
 
@@ -52,7 +52,7 @@ const Doctors = () => {
              transition={{ delay: 0.1 }}
              className="section-subtitle"
           >
-            Our team of world-class doctors is dedicated to providing you with the highest standard of personalized medical care.
+            Our team of world-class physiotherapists is dedicated to providing you with the highest standard of personalized rehabilitation care.
           </motion.p>
         </div>
 

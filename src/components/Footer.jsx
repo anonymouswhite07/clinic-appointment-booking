@@ -18,11 +18,11 @@ const Footer = () => {
                   <Heart className="w-6 h-6 text-white" />
                 </div>
                 <span className="text-2xl font-heading font-bold text-slate-800 tracking-tight">
-                  Lumina<span className="text-primary-600">Health</span>
+                  Lumina<span className="text-primary-600">Physio</span>
                 </span>
               </a>
               <p className="text-slate-500 max-w-sm mb-8 leading-relaxed font-medium">
-                We are committed to providing the highest quality healthcare with a personal touch. Your health is our mission, your comfort is our priority.
+                We are committed to providing the highest quality physiotherapy with a personal touch. Your recovery is our mission, your comfort is our priority.
               </p>
               <div className="flex items-center space-x-4">
                  {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
@@ -40,7 +40,7 @@ const Footer = () => {
            <div>
               <h5 className="text-lg font-bold text-slate-900 mb-6 font-heading">Quick Links</h5>
               <ul className="space-y-4">
-                 {['Home', 'About Us', 'Our Services', 'Meet Doctors', 'Appointments'].map((link) => (
+                 {['Home', 'About Us', 'Our Services', 'Meet Specialists', 'Appointments'].map((link) => (
                    <li key={link}>
                       <a href="#" className="text-slate-500 font-semibold hover:text-primary-600 transition-colors flex items-center group">
                          <span className="w-1.5 h-1.5 bg-primary-200 rounded-full mr-3 group-hover:bg-primary-600 group-hover:scale-125 transition-all"></span>
@@ -67,9 +67,9 @@ const Footer = () => {
         </div>
 
         <div className="container mx-auto px-6 pt-12 border-t border-slate-100 flex flex-col md:flex-row items-center justify-between text-sm text-slate-400 font-medium space-y-4 md:space-y-0">
-           <p>© 2026 Lumina Health Group. All Rights Reserved.</p>
+           <p>© 2026 Lumina Physio Group. All Rights Reserved.</p>
            <div className="flex items-center space-x-6">
-              <p>Built for Healthcare Excellence</p>
+              <p>Built for Physiotherapy Excellence</p>
               <button 
                 onClick={scrollToTop} 
                 className="bg-primary-50 p-2 rounded-full text-primary-600 hover:bg-primary-100 transition-colors shadow-sm"

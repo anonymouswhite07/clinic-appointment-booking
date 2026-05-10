@@ -43,14 +43,14 @@ const Hero = () => {
             className="inline-flex items-center space-x-2 bg-primary-50 px-4 py-2 rounded-full border border-primary-100 text-primary-700 font-medium text-sm mb-6"
           >
             <Sparkles className="w-4 h-4" />
-            <span>Award-winning healthcare excellence</span>
+            <span>Premium physiotherapy & recovery</span>
           </motion.div>
 
           <h1 className="text-5xl md:text-7xl font-heading font-bold text-slate-900 leading-[1.1] mb-6">
-            Compassionate <span className="text-primary-600">Care</span> for Your Family.
+            Expert <span className="text-primary-600">Recovery</span> for Your Body.
           </h1>
           <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-xl leading-relaxed">
-            Experience world-class healthcare with a personal touch. Lumina Health brings together top specialists and cutting-edge technology to keep you at your best.
+            Regain your strength and mobility with personalized physiotherapy. Lumina Physio combines expert specialists and advanced techniques to get you back to your best.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
@@ -70,7 +70,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center space-x-2">
               <HeartPulse className="w-5 h-5 text-primary-500" />
-              <span className="text-sm font-medium text-slate-600">Expert Doctors</span>
+              <span className="text-sm font-medium text-slate-600">Expert Therapists</span>
             </div>
           </div>
         </motion.div>

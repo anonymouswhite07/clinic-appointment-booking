@@ -17,7 +17,7 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'Services', href: '#services' },
-    { name: 'Doctors', href: '#doctors' },
+    { name: 'Specialists', href: '#doctors' },
     { name: 'Appointments', href: '#booking' },
   ];
 
@@ -31,7 +31,7 @@ const Navbar = () => {
             <Heart className="w-6 h-6 text-white" />
           </div>
           <span className="text-2xl font-heading font-bold text-slate-800 tracking-tight">
-            Lumina<span className="text-primary-600">Health</span>
+            Lumina<span className="text-primary-600">Physio</span>
           </span>
         </a>
 
