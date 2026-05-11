@@ -12,7 +12,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="min-h-screen selection:bg-primary-200 selection:text-primary-900 scroll-smooth">
+    <div className="min-h-screen selection:bg-primary-200 selection:text-primary-900 scroll-smooth overflow-x-hidden">
       <Toaster 
         toastOptions={{
           className: 'glass',

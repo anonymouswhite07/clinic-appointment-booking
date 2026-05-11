@@ -20,8 +20,12 @@
 }
 
 @layer base {
+  html, body {
+    @apply overflow-x-hidden w-full max-w-full;
+    overscroll-behavior-x: none;
+  }
   body {
-    @apply font-body text-slate-800 bg-[#f8fbff];
+    @apply font-body text-slate-800 bg-[#fbfdff];
   }
 }
 
